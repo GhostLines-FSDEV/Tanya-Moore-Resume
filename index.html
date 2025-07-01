@@ -14,6 +14,10 @@
   margin: 0;
 }
 
+.align-me{
+  align-content: center;
+}
+
 /* Desktop Heading */
 #heading {
   width: 75vw;
@@ -21,7 +25,7 @@
   font-family: "Inter", sans-serif;
   background-color: #faf9f6;
   text-decoration: underline;
-  position: absolute;
+  position: static;
   left: 1rem;
   top: 1rem;
   padding: 0.25rem;
@@ -36,7 +40,7 @@
   overflow-y: auto;
   font-family: "Inter", sans-serif;
   background-color: #faf9f6;
-  position: absolute;
+  position: static;
   left: 1rem;
   bottom: 0;
   top: 10rem;
@@ -55,7 +59,7 @@
 
 .peek-button {
   display: inline-block;
-  width: 160px;
+  width: 10rem;
   padding: 1rem;
   background-color:black;
   border: 4px solid #5a7d7c;
@@ -82,25 +86,48 @@
 }
 
 /* Desktop Images */
-#selfie,
-#class {
+.pics {
+  position: absolute;
+  right: 1rem;
+  bottom: 20rem;
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem; /* space below buttons */
+}
+
+.pics img {
   width: 200px;
   height: 200px;
-  z-index: -1;
   border: solid #5a7d7c 4px;
   border-radius: 25%;
   object-fit: cover;
-  position: absolute;
+  margin: 1rem;
 }
 
-#selfie {
-  top: 1rem;
-  right: 2rem;
-}
-
+/* Shared image styles */
+#selfie,
 #class {
-  top: 15rem;
-  right: 2rem;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border: solid #5a7d7c 4px;
+  border-radius: 25%;
+  object-fit: cover;
+  margin: 1rem; /* spacing between images */
+}
+
+
+#selfie,
+#class {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border: solid #5a7d7c 4px;
+  border-radius: 25%;
+  object-fit: cover;
+  margin: 1rem;
 }
 
 /* Resume Content */
@@ -134,58 +161,40 @@ ul li { margin-bottom: 0.3rem; }
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 0rem;
-    margin-bottom: 12rem;
+    margin: 0.5rem auto 1rem auto;
     z-index: 100;
   }
 
-
-
   .peek-button {
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1 1 80%;
+    max-width: 300px;
+    padding: 0.75rem;
+    margin: 0.5rem;
+  }
+
+  .pics {
+    position: static;           /* allow normal flow */
     display: flex;
-    flex-wrap: wrap;
-    width: 20%;
-    padding: .5rem;
-    min-width: 100px;
-    margin-top: 0rem;
-    margin-left: 0rem;
-    margin-right: 0.5rem;
-    top: 0;
-    left: 0;
+    flex-direction: block;     /* stack vertically if needed */
+    align-items: center;
+    width: 100%;
+    margin: 1rem auto;
   }
 
-  #heading {
+  .pics img {
+    width: 75%;
+    max-width: 250px;
+    height: auto;
+    margin: 0.5rem auto;
+  }
+
+  #heading, #resume {
     position: static;
     width: 90%;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  #resume {
-    position: static;
-    width: 90%;
-    margin: 0 auto;
-    max-height: none;
-    overflow-y: visible;
-  }
-
-  .pic {
-    position: absolute;
-    margin-top: .5rem;
-    width: 75px;
-    height: 75px;
-  }
-
-  #selfie {
-    top: 3.6rem;
-    right: 0.2rem;
-  }
-
-  #class {
-    top: 3.6rem;
-   left: 0.2rem;
+    margin: 0 auto 1rem auto;
   }
 }
 
@@ -194,22 +203,25 @@ ul li { margin-bottom: 0.3rem; }
     </style>
 </head>
 <body>
-
+  <div class="align-me">
     <div class="button-container">
       <a class="peek-button" href="./community.html">The Community</a>
       <a class="peek-button" href="./awards.html">Awards </a>
       <a class="peek-button" href="./contactme.html">Contact Me </a>
     </div> 
 
+     <div class="pics">
+        <img class="pic" id="selfie" src="./selfie.jpg" alt="Photo of Ms.Moore">
+        <img class="pic" id="class" src="./classroom.jpeg" alt="photo of Ms.Moore with students">
+    </div>
+    </div>
+
+
     <div id="heading">
         <h1>Tanya Moore<br>Special Education Teacher (EC-12)</h1>
     </div>
 
-    <div>
-        <img class="pic" id="selfie" src="./selfie.jpg" alt="Photo of Ms.Moore">
-        <img class="pic" id="class" src="./classroom.jpeg" alt="photo of Ms.Moore with students">
-    </div>
-
+   
 
     <div id="resume">
        
