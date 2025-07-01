@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        #community{
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            background-color: #faf9f6;
+            text-decoration: underline;
+            border-bottom: solid #5a7d7c 5px;
+            z-index: 10;
+        }
+
+        .photo{
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+            border: #5a7d7c solid 4px;
+            border-radius: 10px;
+        }
+
+        .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 8rem;
+        padding: 2rem;
+        }
+
+        .grid img:hover{
+            transform: scale(2);
+        }
+
+         .home{
+        display: inline-block;
+        font-family: "Inter", sans-serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #fff;
+        background-color: #5a7d7c;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        text-decoration: none;
+        position: absolute; 
+        top: 1rem;
+        right: 1rem;
+        z-index: 20;
+        cursor: pointer;
+         }
+
+        .home:hover {
+        background-color: #4a6a6a;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="community">
+       <h1>Community is the Heart of Education</h1>
+    </div>
+    <div>
+        <h2>The community is the heart of all we do. Seeing the students active in the community, activly learning, thats why I teach.</h2> <hr>
+    </div>
+    <div class="grid">
+    <figure>
+    <img class="photo" src="./community/bowling.PNG" alt="bowling day with students">
+    <figcaption>Bowling day with the class</figcaption>
+    </figure>
+    <figure>
+    <img class="photo" src="./community/easter.PNG" alt="Easter bunny with students">
+    <figcaption>Easter time with the students</figcaption>
+    </figure>
+    <figure>
+    <img class="photo" src="./community/FFA.PNG" alt="FFA animal day">
+    <figcaption>FFA field day with the students</figcaption>
+    </figure>
+    <figure>
+    <img class="photo" src="./community/showbiz.PNG" alt="show biz cinemas">
+    <figcaption>Cinema outting with the students</figcaption>
+    </figure>
+    <figure>
+    <img class="photo" src="./community/trackandfield.JPEG" alt="track and field">
+    <figcaption>Track and field, athletic day with the students</figcaption>
+    </figure>
+    </div>
+    <a class="home" href="./index.html">Home</a>
+</body>
+</html>

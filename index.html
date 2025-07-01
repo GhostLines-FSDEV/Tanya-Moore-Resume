@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #faf9f6;
+            margin: 0;
+        }
+
+        #heading{
+            width: 80vw;
+            height: 125px;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            background-color: #faf9f6;
+            text-decoration: underline;
+            position: absolute; left: 1rem; top: 1rem; right:0;
+            border-bottom: solid #5a7d7c 5px;
+            z-index: 10;
+        }
+
+        #resume{
+            width: 80vw;
+            max-height: calc(100vh - 150px); 
+            overflow-y: auto;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            background-color: #faf9f6;
+            position: absolute; left: 1rem; bottom: 0; top: 8rem; right:0;
+            margin: 0;
+            
+        }
+
+        #selfie{
+            width: 200px;
+            height: 200px;
+            z-index: -1;
+            border: solid #5a7d7c 3px;
+            border-radius: 25%;
+            object-fit: cover;
+            position: absolute; top: 1rem; right: 2rem;
+        }
+
+        #class{
+            width: 200px;
+            height: 200px;
+            z-index: -1;
+            border: solid #5a7d7c 3px;
+            border-radius: 25%;
+            object-fit: cover;
+            position: absolute; top: 15rem; right: 2rem;
+        }
+
+        .button-container {
+            position: fixed; right: 2rem; bottom: 0rem;        
+            display: inline-block;
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            .button-container {
+            display: none; 
+                           }
+                            }
+
+           .button-container:hover .popup-image{
+            opacity: 1;
+            transform: translateX(-50%) translateY(-20px);
+        }
+
+        #button-background{
+            background-size: cover;
+            background-position: center;
+            width: 200px; height: 250px;
+            position: relative; right: .0rem; 
+            bottom: 1.5rem;
+            margin: 0;
+            z-index: 0;
+        }
+
+        .peek-buttona:hover,
+        .peek-buttonb:hover,
+        .peek-buttonc:hover {
+         transform: scale(1.1);
+         transition: transform 0.2s;
+        }
+
+        .peek-buttona,.peek-buttonb,.peek-buttonc{
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+        }
+
+       .peek-button {
+            display: inline-block;
+            width: 160px; 
+            padding: 1rem;
+            background-color: #5a7d7c;
+            border: 2px solid #333;
+            border-radius: 15px;
+            color: black;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+            position: relative;
+            top: 20px;
+            left: 1.5%;
+            margin-bottom: 25px;
+            transition: transform 0.2s;
+            word-wrap: break-word;  
+            white-space: normal;    
+}
+
+.peek-button:hover {
+  transform: scale(1.1);
+}
+
+
+        #resumeactual {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      border: 1px solid #333;
+    }
+    h1, h2, h3, h4 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #000;
+    }
+    h1 {
+      font-size: 2rem;
+      text-decoration: underline;
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 1.25rem;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.2rem;
+    }
+    h4 {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    p {
+      margin: 0.5rem 0;
+    }
+    ul {
+      margin: 0.5rem 0 1rem 1.5rem;
+    }
+    ul li {
+      margin-bottom: 0.3rem;
+    }
+
+     
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <h1>Tanya Moore<br>Special Education Teacher (EC-12)</h1>
+    </div>
+
+    <div>
+        <img id="selfie" src="./selfie.jpg" alt="Photo of Ms.Moore">
+        <img id="class" src="./classroom.jpeg" alt="photo of Ms.Moore with students">
+    </div>
+
+
+    <div id="resume">
+       
+<div id="resumeactual">
+  <h3>Career Objective</h3>
+  <p>
+    Teach students to gain more independence through learning valuable life skills in exciting hands-on ways, design/use tools and manipulatives to help students develop a deeper understanding of core curriculum, and help students build self-esteem in fun and exciting ways. Frequently praised for creative thinking by peers and specialists; I can be relied upon to help students achieve their goals to the best of their abilities.
+  </p>
+
+  <h3>Experience</h3>
+  <h4>Para-Professional, Huffman ISD (August 2018 – May 2024)</h4>
+  <ul>
+    <li>Developed and maintained positive relationships with students, promoting a positive attitude toward learning.</li>
+    <li>Supervised students during cooling-off time, educational time, and monitored behaviors.</li>
+    <li>Implemented behavioral plans designed by IEP team.</li>
+    <li>Tutored and assisted students individually and in small groups to reinforce learning concepts and promote academic progress.</li>
+    <li>Worked one-on-one with students to reinforce material.</li>
+    <li>Demonstrated patience, compassion, and empathy.</li>
+    <li>Supervised students on school grounds and field trips.</li>
+    <li>Enforced administration policies and rules.</li>
+    <li>Requisitioned and stocked teaching materials and supplies.</li>
+    <li>Attended staff meetings and served on committees.</li>
+    <li>Prepared lesson materials, bulletin boards, equipment, and demonstrations.</li>
+  </ul>
+
+  <h4>Special Education Teacher Life Skills/RISE (6th–12th grades) (August 2025 – Present)</h4>
+  <ul>
+    <li>Performed all responsibilities from para-professional role.</li>
+    <li>Wrote customized IEPs for each student.</li>
+    <li>Attended ARD meetings and implemented decisions.</li>
+    <li>Observed and documented student progress.</li>
+    <li>Taught core curriculum, life skills, sports, dancing, and employment/social skills.</li>
+    <li>Devised individualized strategies for reinforcing material based on student needs.</li>
+    <li>Provided positive, nurturing support for students’ physical, personal, and emotional needs.</li>
+    <li>Promoted a positive, fun, and safe learning environment.</li>
+    <li>Led team members by example; encouraged teamwork and never assigned tasks I wouldn’t do myself.</li>
+  </ul>
+
+  <h3>State Certifications</h3>
+  <ul>
+    <li>Special Education EC-12, April 2025</li>
+    <li>Pedagogy and Professional Responsibilities, July 2025</li>
+  </ul>
+
+  <h3>Extra-Curricular Activities</h3>
+  <ul>
+    <li>Student school dance program</li>
+    <li>Student softball league</li>
+    <li>Students’ FFA projects</li>
+    <li>Grieving Momma’s Counseling</li>
+    <li>EMET Church Women’s Ministry</li>
+    <li>SHSU Alumni events</li>
+  </ul>
+
+  <h3>Awards & Honors</h3>
+  <ul>
+    <li>President’s List @ LoneStar College System and Academic Excellence 4.0 GPA</li>
+    <li>Phi Theta Kappa Honor Society</li>
+    <li>Dean’s List @ Sam Houston State University and Academic Excellence 4.0 GPA</li>
+    <li>Honor Society memberships: KDP Delta Theta Chapter SHSU, Golden Key International Honor Society, The National Society of Collegiate Scholars, HonorSociety.ORG, and The Society for Collegiate Leadership & Achievement</li>
+  </ul>
+
+  <h3>Certifications & Professional Development</h3>
+  <ul>
+    <li>Mental Health First Aid USA</li>
+    <li>Heartsaver Pediatric First Aid CPR AED</li>
+    <li>Life Skills Institute Year 1 Foundation</li>
+    <li>Role of Sensory Skills in Education</li>
+    <li>SHSU PLT Walk in The Forest Workshop</li>
+    <li>Seizure Training for School Personnel v3.0</li>
+    <li>Personal Insights into Digital Data Collection</li>
+    <li>Child Find: Standards-Based IEP Process Training</li>
+    <li>SHSU Autism Research and Education (SHARE) Workshop Series</li>
+    <li>Collaborative Partnerships Through Inclusive Classrooms</li>
+    <li>STAAR ALT 2 Participation Roadmap Criteria & Considerations</li>
+    <li>Google Certified Educator</li>
+    <li>Dyslexia: A Step Toward IEP Quality and Rigor</li>
+    <li>Ethics, FERPA, Sexual Harassment, Cybersecurity Awareness, Title IX Compliance</li>
+    <li>2024 Quizlet Unconference for Teachers</li>
+    <li>Special Education Instructional Conference (Summer 2025)</li>
+  </ul>
+
+  <h3>Personal Skills & Attributes</h3>
+  <ul>
+    <li>Calm, patient demeanor</li>
+    <li>Enthusiastic and passionate about teaching</li>
+    <li>Effective communicator</li>
+    <li>Strong work ethic and dependable</li>
+    <li>Positive reinforcement methods</li>
+    <li>Promotes social and emotional development</li>
+    <li>Motivates and inspires students</li>
+    <li>Team player who leads by example</li>
+  </ul>
+</div>
+
+
+</h2>
+    </div>
+
+    <div class="button-container">
+        <div id="button-background">
+           
+            <div>
+           <a class="peek-button" href="./contactme.html">Contact Me </a>
+           </div>
+
+           <div>
+            <a class="peek-button" href="./community.html">Community Outreach</a>
+           </div>
+
+           <div>
+            <a class="peek-button" href="./awards.html">Awards </a>
+           </div>
+           
+        </div>
+    </div>   
+
+  
+    
+
+
+</body>
+</html>
