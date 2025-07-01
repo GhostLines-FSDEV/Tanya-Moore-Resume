@@ -27,7 +27,6 @@
             #community{
                 padding-top: 3rem;
             }
-        }
 
         .photo{
             width: 350px;
@@ -43,6 +42,7 @@
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 8rem;
         padding: 2rem;
+        justify-items: center;
         }
 
         .grid img:hover{
@@ -65,16 +65,25 @@
         z-index: 20;
         cursor: pointer;
         border: #4a6a6a solid 4px;
+        position: static;
+        display: block;
+        padding: 1rem auto;
+        text-align: center;
          }
 
         .home:hover {
         background-color: #4a6a6a;
         border: solid black 5px;
         }
+        #community{
+            padding-top: 4rem;
+        }
+    }
         
     </style>
 </head>
 <body>
+      <a class="home" href="./index.html">Home</a>
     <div id="community">
        <h1>Community is the Heart of Education</h1>
     </div>
@@ -103,6 +112,5 @@
     <figcaption>Track and field, athletic day with the students</figcaption>
     </figure>
     </div>
-    <a class="home" href="./index.html">Home</a>
 </body>
 </html>
