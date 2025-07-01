@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     
     <style>
+        body{
+            background-color: #faf9f6;
+        }
+
         #community{
             font-family: "Inter", sans-serif;
             font-optical-sizing: auto;
@@ -16,6 +20,13 @@
             text-decoration: underline;
             border-bottom: solid #5a7d7c 5px;
             z-index: 10;
+
+        }
+
+        @media (max-width:768px){
+            #community{
+                padding-top: 3rem;
+            }
         }
 
         .photo{
@@ -23,7 +34,7 @@
             height: 350px;
             object-fit: cover;
             display: block;
-            border: #5a7d7c solid 4px;
+            border: #5a7d7c solid 5px;
             border-radius: 10px;
         }
 
@@ -35,7 +46,7 @@
         }
 
         .grid img:hover{
-            transform: scale(2);
+            transform: scale(1.1);
         }
 
          .home{
@@ -44,7 +55,7 @@
         font-size: 1.2rem;
         font-weight: bold;
         color: #fff;
-        background-color: #5a7d7c;
+        background-color: black;
         padding: 0.5rem 1rem;
         border-radius: 8px;
         text-decoration: none;
@@ -53,10 +64,12 @@
         right: 1rem;
         z-index: 20;
         cursor: pointer;
+        border: #4a6a6a solid 4px;
          }
 
         .home:hover {
         background-color: #4a6a6a;
+        border: solid black 5px;
         }
         
     </style>

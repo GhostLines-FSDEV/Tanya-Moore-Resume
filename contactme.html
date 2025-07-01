@@ -11,6 +11,7 @@
     <style>
     body{
         margin: 0;
+        background-color: #faf9f6;
     }
     #contactmepage{
          width: 100vw;
@@ -22,6 +23,7 @@
             position: relative;
             top: 0; left: 0; right: 0;
             margin: 0;
+            padding-top: 2rem;
     }
 
     #fun{
@@ -30,6 +32,7 @@
     }
 
     #fun img {
+        border: #4a6a6a solid 4px;
         width: 100%;
         height: 100%;
         display: block;
@@ -41,7 +44,7 @@
   font-size: 1.2rem;
   font-weight: bold;
   color: #fff;
-  background-color: #5a7d7c;
+  background-color: black;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   text-decoration: none;
@@ -49,16 +52,31 @@
   top: 1rem;
   right: 1rem;
   z-index: 20;
+  border: #4a6a6a solid 4px;
     }
 
     .home:hover {
   background-color: #4a6a6a;
+  border: black solid 5px;
     }
+
+    @media (max-width: 768px){ #fun {
+        width: 100%;
+        height: 20rem;
+    }
+    .button-wrap {
+        position: relative; 
+        margin-top: 1rem;
+        right: auto;
+    }}
 
 </style>
 </head>
   
 <body>
+    <div class="button-wrap">
+    <a class="home" href="./index.html">Home</a>
+    </div> 
 
     <div id="contactmepage">
         <h1>Welcome to my contact me page!</h1>
@@ -76,7 +94,7 @@
     <img src="./classroom.jpeg" alt="Ms.Moore in classroom">
     </div>
 
-    <a class="home" href="./index.html">Home</a>
+    
 
 </body>
 </html>
