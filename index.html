@@ -4,218 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
     <style>
-        
-  body {
-  background-color: #faf9f6;
-  margin: 0;
-}
-
-.align-me{
-  align-content: center;
-}
-
-/* Desktop Heading */
-#heading {
-  width: 75vw;
-  height: 125px;
-  font-family: "Inter", sans-serif;
-  background-color: #faf9f6;
-  text-decoration: underline;
-  position: static;
-  left: 1rem;
-  top: 1rem;
-  padding: 0.25rem;
-  border-bottom: solid #5a7d7c 5px;
-  z-index: 1;
-}
-
-/* Desktop Resume */
-#resume {
-  width: 75vw;
-  max-height: calc(100vh - 150px);
-  overflow-y: auto;
-  font-family: "Inter", sans-serif;
-  background-color: #faf9f6;
-  position: static;
-  left: 1rem;
-  bottom: 0;
-  top: 10rem;
-  margin: 0;
-}
-
-/* Desktop Buttons */
-.button-container {
-  position: fixed;
-  width: 160px;
-  right: 5.5rem;
-  bottom: 3rem;
-  display: inline-block;
-  margin: 0;
-}
-
-.peek-button {
-  display: inline-block;
-  width: 10rem;
-  padding: 1rem;
-  background-color:black;
-  border: 4px solid #5a7d7c;
-  border-radius: 15px;
-  color: white;
-  text-decoration: none;
-  font-weight: 900;
-  font-size: 1rem;
-  cursor: pointer;
-  text-align: center;
-  position: relative;
-  top: 20px;
-  left: 1.5%;
-  margin-bottom: 25px;
-  transition: transform 0.2s;
-  word-wrap: break-word;
-  white-space: normal;
-}
-
-.peek-button:hover {
-  transform: scale(1.1);
-  background-color: #5a7d7c;
-  border: solid black 4px;
-}
-
-/* Desktop Images */
-.pics {
-  position: absolute;
-  right: 1rem;
-  bottom: 20rem;
-  width: 15rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 2rem; /* space below buttons */
-}
-
-.pics img {
-  width: 200px;
-  height: 200px;
-  border: solid #5a7d7c 4px;
-  border-radius: 25%;
-  object-fit: cover;
-  margin: 1rem;
-}
-
-/* Shared image styles */
-#selfie{
-  display: inline-block;
-  width: 200px;
-  height: 200px;
-  border: solid #5a7d7c 4px;
-  border-radius: 25%;
-  object-fit: cover;
-  margin:1rem; /* spacing between images */
-}
-
-
-
-/* Resume Content */
-#resumeactual {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-  border: 1px solid #333;
-}
-h1{
-  text-align: center;
-}
-h1, h2, h3, h4 {
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #000;
-}
-
-h1 { font-size: 2rem; text-decoration: underline; }
-h2 { font-size: 1.5rem; font-weight: bold; }
-h3 { font-size: 1.25rem; border-bottom: 1px solid #444; padding-bottom: 0.2rem; }
-h4 { font-size: 1.1rem; font-weight: bold; margin-top: 1rem; }
-
-p { margin: 0.5rem 0; }
-ul { margin: 0.5rem 0 1rem 1.5rem; }
-ul li { margin-bottom: 0.3rem; }
-
-/* 🔥 Mobile adjustments */
-@media (max-width: 768px) {
-  .button-container {
-    position: static;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0.5rem auto 1rem auto;
-    z-index: 100;
-  }
-
-  .peek-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1 1 80%;
-    max-width: 300px;
-    padding: 0.75rem;
-    margin: 0.5rem;
-  }
-
-  .pics {
-    position: static;           /* allow normal flow */
-    display: flex;
-    flex-direction: block;     /* stack vertically if needed */
-    align-items: center;
-    width: 100%;
-    margin: 1rem auto;
-  }
-
-  .pics img {
-    width: 75%;
-    max-width: 150px;
-    height: 150px;
-    margin: 0.5rem auto;
-  }
-
-  #heading, #resume {
-    position: static;
-    width: 90%;
-    margin: 0 auto 1rem auto;
-  }
-}
-
-
-     
+      
     </style>
+
 </head>
+
 <body>
-  <div class="align-me">
-    <div class="button-container">
-      <a class="peek-button" href="./community.html">The Community</a>
-      <a class="peek-button" href="./awards.html">Awards </a>
-      <a class="peek-button" href="./contactme.html">Contact Me </a>
-    </div> 
 
-     <div class="pics">
-        <img class="pic" id="selfie" src="./selfie.jpg" alt="Photo of Ms.Moore">
-        
-    </div>
-    </div>
+<div class="container">
+  <div class="pics">
+     <img class="pic" id="selfie" src="./selfie.jpg" alt="Photo of Ms.Moore">
+  </div>
 
+  <div id="heading">
+     <h1>Tanya Moore<br>Special Education Teacher (EC-12)</h1>
+  </div>
+</div>  
 
-    <div id="heading">
-        <h1>Tanya Moore<br>Special Education Teacher (EC-12)</h1>
-    </div>
+ <div class="button-container">
+    <a class="peek-button" href="./community.html">The Community</a>
+    <a class="peek-button" href="./awards.html">Awards </a>
+    <a class="peek-button" href="./contactme.html">Contact Me </a>
+</div> 
 
-   
-
-    <div id="resume">
-       
 <div id="resumeactual">
   <h3>Career Objective</h3>
   <p>
@@ -307,11 +124,6 @@ ul li { margin-bottom: 0.3rem; }
     <li>Team player who leads by example</li>
   </ul>
 </div>
-
-
-</h2>
-    </div>    
-
-
+  
 </body>
 </html>
